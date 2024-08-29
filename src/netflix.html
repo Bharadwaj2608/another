@@ -11,26 +11,73 @@
 </head>
 
 <body>
-    <div class="relative h-screen bg-black/60">
+    <div class="relative h-screen w-[100%] z-0 ">
         <img src="https://assets.nflxext.com/ffe/siteui/vlv3/b2c3e95b-b7b5-4bb7-a883-f4bfc7472fb7/80a8277e-14eb-4192-83f7-45c27cd0652b/US-en-20240805-POP_SIGNUP_TWO_WEEKS-perspective_WEB_99b9a7c9-7791-4a48-b335-09e8ee246500_large.jpg"
-             class="" alt=""> 
-        <div class="">
-
+             class=" h-[100%] w-[100%] object-cover z-1" alt=""> 
+        <div class="absolute top-0 bg-gradient-to-t from-[rgb(0,0,0,0.9)] from-10% via-[rgb(0,0,0,0.7)] via-60% to-[rgb(0,0,0,0.8)] h-screen w-[100%] z-2">
+    
         </div>
-            <div class="absolute top-0 flex w-[100%] justify-between mx-auto px-40 mt-5 ">
+            <div class="absolute top-0 flex w-[100%] justify-between mx-auto px-40 mt-6 ">
             <img src="netflix copy.svg" class=" w-36" alt="">
             <div class="flex gap-3">
-                <button class="bg-black text-white rounded-xl px-4 py-2 flex items-center gap-2">English <i class="bi bi-caret-down-fill"></i></button>
-                <button class="bg-red-700 text-white rounded-xl px-4 py-2">Sign In</button>
+                <button class="bg-black text-white rounded-md px-4 py-2 flex items-center gap-2 border-2 border-solid border-gray-600">English <i class="bi bi-caret-down-fill"></i></button>
+                <button class="bg-red-700 text-white rounded-md px-4 py-2">Sign In</button>
             </div>
         </div>
         <div class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-center">
             <h1 class="font-bold text-6xl whitespace-normal text-white ">Unlimited movies,TV shows and more</h1>
-            <h2 class="text-white text-lg font-semibold mt-3">Starts at ₹149. Cancel anytime.</h2>
+            <h2 class="text-white text-lg font-semibold mt-4">Starts at ₹149. Cancel anytime.</h2>
             <p class="text-white text-sm font-semibold mt-5">Ready to watch? Enter your email to create or restart your membership.</p>
             <div class="">
-                <input type="text" class="px-5 py-4 text-left rounded-md w-80 bg-transparent border-solid border-red" placeholder="Email address">
-            <button  class="text-white bg-red-600 px-4 py-4 text-xl rounded-md mt-3 ml-1">Get Started <i class="bi bi-chevron-right"></i></button>
+                <input type="text" class="active:border-none px-4 py-3 text-left rounded-md w-80 bg-transparent border-solid border-2 border-gray-600  text-white" placeholder="Email address">
+            <button  class="text-white font-semibold bg-red-600 px-4 py-3 text-xl rounded-md mt-3 ml-1">Get Started <i class="bi bi-chevron-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="h-[100%] w-[100%] bg-gradient-to-b from-[rgba(4,1,22,1)] from-1%  to-[rgb(4,1,22,1)] to-99% overflow-x-hidden overflow-y-hidden">
+
+       <div class="px-24 py-6">
+        <h2 class="font-semibold text-2xl text-white">Trending Now </h2>
+        <div class="flex gap-5">
+            <button class="border-2 border-solid border-gray-700  text-white rounded-sm px-3 py-1 mt-4">India  <i class="bi bi-caret-down-fill"></i></button>
+            <button class="border-2 border-solid border-gray-700  text-white rounded-sm px-3 py-1 mt-4">Movies <i class="bi bi-caret-down-fill"></i></button>
+        </div>
+            <div class="flex pl-6 pt-8 gap-8 w-full overflow-x-scroll scrollbar">
+       
+            <img src="kalki-img.webp" class="w-44 h-60 object-cover object-top rounded-lg" alt="">   
+            <img src="pahd.webp" class="w-44 h-60 object-cover object-top rounded-lg" alt="">
+            <img src="theunion.webp" class="w-44 h-60 object-cover object-top rounded-lg" alt="">
+            <img src="indian2.webp" class="w-44 h-60 object-cover object-top rounded-lg" alt="">
+            <img src="maharaja.webp" class="w-44 h-60 object-cover object-top rounded-lg" alt="">
+            <img src="shazam.webp" class="w-44 h-60 object-cover object-top rounded-lg" alt="">
+            <img src="shazam.webp" class="w-44 h-60 object-cover object-top rounded-lg" alt="">
+            </div>
+        </div>
+        <div class="mt-14 ">
+            <h2 class="text-white mt-14 pl-24 font-semibold text-2xl">More reasons to join</h2>
+        </div>
+        <div class="flex ml-24 mt-5 gap-5">
+            <div class="text-white h-60 w-[283px] bg-red-700 px-4 rounded-2xl relative">
+                <h2 class="text-xl font-bold pt-4">Enjoy on your TV</h2>
+                <p class="mt-1">Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>   
+                <img src="airplay.png" class="w-16 absolute bottom-2 right-5" alt="">
+            </div>
+            <div class="text-white h-60 w-[283px] bg-red-700 px-4 rounded-2xl relative">
+                <h2 class="text-xl font-bold pt-4">Download your shows to watch offline</h2>
+                <p class="mt-1">Save your favourites easily and always have something to watch.</p>   
+                <img src="download.png" class="w-20 absolute bottom-0 right-2" alt="">
+            </div>
+            <div class="text-white h-60 w-[283px] bg-red-700 px-4 rounded-2xl relative">
+                <h2 class="text-xl font-bold pt-4">Watch everywhere</h2>
+                <p class="mt-1">Stream unlimited movies and TV shows on your phone, tablet, laptop and TV.</p>   
+                <img src="ipad.jpeg" class="rounded-full h-16 w-16 object-cover absolute bottom-2 right-2" alt="">
+            </div>
+            <div class="text-white h-60 w-[283px] bg-red-700 px-4 rounded-2xl">
+                <h2 class="text-xl font-bold pt-4">Create profiles for kids</h2>
+                <p class="mt-1 text-base">Send kids on adventures with their favourite characters in a space made just for them — free with membership.</p>   
+                
+                <h2 class="text-6xl text-end mt-6 ml-44">👦</h2>
             </div>
         </div>
     </div>
